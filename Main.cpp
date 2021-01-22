@@ -127,8 +127,8 @@ void display(GLFWwindow* window, double currentTime) {
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
 	glUseProgram(renderingProgram);
-	glDrawArrays(GL_POINTS, 0, 1);
-	glPointSize(30.0f);
+	glDrawArrays(GL_TRIANGLES, 0,3);
+	glPointSize(1.0f);
 }
 
 int main(void) {
